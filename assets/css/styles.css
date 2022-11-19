@@ -1,38 +1,67 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
-    background-color: steelblue;
+  background-color: steelblue;
 }
 
 nav li {
-    list-style: none;
-    display: inline-block;
-    padding: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 nav a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 h1 {
-    font-size: xx-large;
+  font-size: xx-large;
 }
 
 .digital-mkt {
-    width: 100%;
-    height: 80%;
+  width: 100%;
+  height: 80%;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "seo benefits"
+    "reputation  benefits"
+    "marketing  benefits";
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 70% 1fr; 
 }
 
 article {
-    background-color: royalblue;
-    margin: 1rem;
-    padding: 0.5rem;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.seo {
+  background-color: blueviolet;
+  grid-area: seo;
+}
+
+.reputation {
+  background-color: tomato;
+  grid-area: reputation;
+}
+
+.marketing {
+  background-color: yellowgreen;
+  grid-area: marketing;
+}
+
+.benefits {
+  background-color: blue;
+  grid-area: benefits;
 }
 
 img {
-    width: 240px;
+  width: 240px;
 }
