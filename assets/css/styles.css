@@ -1,13 +1,16 @@
+/* Using the universal/star selector to give all the document a specific style */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+/* Giving a background color of almost white to the body background */
 body {
   background-color: #d9dcd6;
 }
 
+/* Applying style to the header element */
 header {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -16,15 +19,18 @@ header {
   color: #ffffff;
 }
 
+/* This will apply style all the h1 elements inside the header element */
 header h1 {
   display: inline-block;
   font-size: 48px;
 }
 
+/* This will provide style to all the class seo that are descendent from a h1 that descends from header */
 header h1 .seo {
   color: #d9dcd6;
 }
 
+/* Applying style to the nav element that descends from the header element */
 header nav {
   padding-top: 15px;
   margin-right: 20px;
@@ -33,24 +39,29 @@ header nav {
   font-size: 20px;
 }
 
+/* Removing the list type from all the ul elements inside the nav, descended from header */
 header nav ul {
   list-style-type: none;
 }
 
+/* Gives stto every item from all the ul elements inside the nav, descended from header */
 header nav ul li {
   display: inline-block;
   margin-left: 25px;
 }
 
+/* This will style all the a elements by coloring them with white and deleting all text decoration */
 a {
   color: #ffffff;
   text-decoration: none;
 }
 
+/* This will style all the p elements with 16px of size */
 p {
   font-size: 16px;
 }
 
+/* This will provide style to all the elements that have the class hero */
 .hero {
   height: 800px;
   width: 100%;
@@ -60,26 +71,31 @@ p {
   background-position: center;
 }
 
+/* Giving the style and layout to the main element */
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+/* This class will style every element that has it by floating it to the left */
 .float-left {
   float: left;
   margin-right: 25px;
 }
 
+/* This class will style every element that has it by floating it to the right */
 .float-right {
   float: right;
   margin-left: 25px;
 }
 
+/* Will fit to content the height of all the section elements */
 section {
   height: fit-content;
 }
 
+/* Giving style to the elements that have the content class */
 .content {
   display: inline-block;
   margin-left: 20px;
@@ -87,6 +103,7 @@ section {
   width: 70%;
 }
 
+/* Giving style to the elements that have the benefits class */
 .benefits {
   margin-left: 20px;
   margin-right: 20px;
@@ -97,22 +114,25 @@ section {
   text-align: center;
 }
 
+/* Style the article elements that descend from an element that has a benefits class */
 .benefits article {
   margin-bottom: 32px;
   color: #ffffff;
 }
 
+/* Style the h3 elements that is inside from an article element that descend from an element that has a benefits class */
 .benefits article h3 {
   margin-bottom: 10px;
   text-align: center;
 }
-
+/* Style the img elements that is inside from an article element that descend from an element that has a benefits class */
 .benefits article img {
   display: block;
   margin: 10px auto;
   max-width: 150px;
 }
 
+/* Style the article elements that descend from an element that has a content class */
 .content article {
   margin-bottom: 20px;
   padding: 50px;
@@ -122,16 +142,18 @@ section {
   color: #ffffff;
 }
 
+/* Style the img elements that is inside from an article element that descend from an element that has a content class */
 .content article img {
   max-height: 200px;
 }
 
+/* Style the h2 elements that is inside from an article element that descend from an element that has a content class */
 .content article h2 {
   margin-bottom: 20px;
   font-size: 36px;
 }
 
-
+/* This will style the footer element */
 footer {
   padding: 30px;
   clear: both;
@@ -140,11 +162,17 @@ footer {
   text-align: center;
 }
 
+/* This will give a font size of 20px to all the h2 elements that are descendent from a footer element */
 footer h2 {
   font-size: 20px;
 }
 
+/* Tells us what will happen if the screen has a lower width then 1250px */
 @media (max-width: 1250px) {
+  header nav {
+    font-size: 18px;
+  }
+
   .content {
     width: 100%;
   }
@@ -154,7 +182,12 @@ footer h2 {
   }
 }
 
+/* Tells us what will happen if the screen has a lower width then 876px */
 @media (max-width: 876px) {
+  header nav {
+    font-size: 15px;
+  }
+
   p {
     font-size: 14px;
   }
