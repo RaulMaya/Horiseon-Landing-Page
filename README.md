@@ -26,18 +26,15 @@ The objective of this project is to refactor, by using some good practices like 
 
 The project was developed using tools such as HTML and CSS, the project consist in refactor, clean and make functional the landing web page for Horiseon. Horiseon, as a marketing agency want a codebase that follows accessibility standards so that the own site is optimized for search engines.
 
-The API Developed is fully functional and can handle:
-1. Creating and updating user profiles.
-2. Login and authentication.
-3. Posting status updates.
-4. Viewing status update feeds.
-
-
 |<center> Horiseon Landing Page  </center>|
 | --- |
 | ![HoriseonLandingPage](./assets/images/HoriseonLP.png) |
 
 
+
+| Before      | After         | 
+| ------------- | ------------- | 
+| ![HoriseonLandingPage](./assets/images/before.jpg) | ![HoriseonLandingPage](./assets/images/after.jpg) | 
 
 ### Contact :iphone:
 
